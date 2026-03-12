@@ -9,6 +9,10 @@ const config = {
         password: process.env.DB_PASSWORD,
         database: process.env.DB_NAME
     },
+    jwt: {
+        secret: process.env.TOKEN,
+        expiry: process.env.TOKEN_EXPIRY
+    },
     tables: {
         user: "users"
     }
